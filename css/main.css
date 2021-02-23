@@ -1,0 +1,167 @@
+/*GLOBAL*/
+h1 {
+	font-size: 4rem !important;
+}
+h2 {
+	font-size: 3.2rem !important;
+}
+.loader {
+	position: absolute;
+	top: 40%;
+	left: 47%;
+}
+.login {
+	margin-top: 30vh;
+	margin-bottom: 30vh;
+}
+.strong {
+	font-weight: bold !important;
+}
+.btn-extended {
+	display: block;
+	width: 80%;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.alert {
+	width: 100%;
+	text-align: center;
+	height: 1.6rem;
+}
+.alert-success {
+	color: #fff;
+	background-color: #00897b;
+}
+.alert-danger {
+	color: #fff;
+	background-color: #b71c1c;
+}
+
+.pointer {
+	cursor: pointer;
+}
+.pointer:hover {
+	opacity: 0.7;
+}
+
+.sidenav {
+	overflow: hidden;
+}
+a .material-icons:hover {
+	opacity: 0.3;
+}
+
+footer {
+	font-weight: bold;
+}
+
+
+/*LOGIN*/
+.section-login {
+	background: url('https://www.mleuven.be/sites/default/files/styles/hero_ratio_31_12/public/paragraph_hero/stad_leuven_ae_6.jpg?itok=FaeseKLi'), #000 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.h2-login {
+	font-size: 3rem;
+	margin-bottom: 2rem;
+}
+#login-form {
+	border-radius: 10px;
+}
+
+#btn-login:hover {
+	background-color: #009688 !important;
+	color: #fff !important;
+}
+#btn-login:active {
+	background-color: #a7ffeb !important;
+	transform: scale(0.95);
+	color: #000 !important;
+	font-weight: bold !important;
+}
+
+/* ORGANIZER */
+#organizer-container {
+	height: 100%;
+	min-height: 90vh;
+}
+#btn-organizer-add {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	width: 100%;
+}
+#btn-organizer-add:active {
+	transform: scale(0.95);
+}
+
+.btn-img-audio {
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
+}
+
+#btn-organizer-add-img {
+	margin: 5px;
+}
+#btn-organizer-add-audio {
+	margin: 5px;
+}
+
+/* index-section */
+#index-section {
+	height: 100%;
+}
+/* id="home-img" */
+#home-img {
+	max-height: 30vw;
+}
+#avatar {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+/* CARDS */
+.card-row {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+.card-action {
+	color: #f2f2f2 !important;
+}
+
+.card-row {
+	
+}
+
+/*VISUALIZATION*/
+#display-data {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+#display-data img {
+	max-height: 20vh;
+}
+
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 20px !important;
+  }
+  h2 {
+  	font-size: 18px !important;
+  }
+  p {
+  	font-size: 16px !important;
+  }
+}
+
+@media only screen and (max-width: 992px)
+nav .brand-logo {
+    left: 30%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    }

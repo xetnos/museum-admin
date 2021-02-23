@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--Import Google Icon Font-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+		<!--Import materialize.css-->
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+		<link type="text/css" rel="stylesheet" href="css/main.css" media="screen,projection" />
+
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Museum | Organize Paintings</title>
+	</head>
+	
+	<body id="body-organizer">
+		<!-- NAV BAR -->
+		<!-- NAV BAR -->
+		<nav class="black">
+			<div class="container">
+				<div class="nav-wrapper">
+					<a href="index.html" class="brand-logo">MuseumAdmin</a>
+					<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+					<ul class="right hide-on-med-and-down">
+						<li>
+							<a href="index.html"><i class="material-icons">home</i></a>
+						</li>
+						<li>
+							<a href="#"><i class="material-icons">add_circle </i></a>
+						</li>
+						<li></li>
+						<li>
+							<a href="organizer.html"><i class="material-icons">edit</i></a>
+						</li>
+						<li></li>
+						<li>
+							<a href="visualization.html"><i class="material-icons">insert_chart </i></a>
+						</li>
+						<li>
+							<a href="#"><i class="material-icons">settings </i></a>
+						</li>
+						<li>
+							<a><i class="material-icons" onClick="document.location.reload(true)">refresh</i></a>
+						</li>
+						<li>
+							<a href="login.html"><i class="material-icons">exit_to_app </i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Mobile Hamburger Nav Bar -->
+		<ul class="sidenav white" id="mobile-demo">
+			<li>
+				<a href="index.html"><i class="material-icons">home</i><span>Home</span></a>
+			</li>
+			<li>
+				<a href="#"><i class="material-icons">add_circle</i><span>Add CSV/JSON</span></a>
+			</li>
+			<li>
+				<a href="organizer.html"><i class="material-icons">edit</i><span>Add Manually</span></a>
+			</li>
+			<li>
+				<a href="visualization.html"><i class="material-icons">insert_chart</i><span>Visualization</span></a>
+			</li>
+			<li>
+				<a href="#"><i class="material-icons">settings</i><span>Settings</span></a>
+			</li>
+			<li>
+				<a href="collapsible.html" onClick="document.location.reload(true)"><i class="material-icons">refresh</i><span>Refresh</span></a>
+			</li>
+			<li>
+				<a href="login.html"><i class="material-icons">exit_to_app </i><span>Exit</span></a>
+			</li>
+		</ul>
+
+		<!-- SideNav -->
+		<div class="container">
+			<ul id="slide-out" class="sidenav black">
+				<li>
+					<div class="user-view center">
+						<span class="center center-align" id="avatar">
+							<img class="circle center" src="img/664ad57e704e648661d28a4590b0b176a4-12-jon-snow.2x.rsquare.w536.jpg" alt="user-jon-snow" />
+						</span>
+						<a href="#"><span class="white-text name center">Jon Snow</span></a>
+						<a href="#"><span class="white-text email">jonsnow@test.com</span></a>
+					</div>
+				</li>
+				<li>
+					<a href="http://aws.amazon.com/" target="_blank"><i class="material-icons white-text">cloud</i><span class="white-text">Cloud Practicioner</span></a>
+				</li>
+				<li>
+					<a href="https://www.mleuven.be/" target="_blank"><span class="white-text">Working at The Museum & The Wall</span> </a>
+				</li>
+				<br /><br />
+				<li><div class="divider white-text"></div></li>
+				<li><a class="subheader white-text">NAVIGATION</a></li>
+				<li><a class="waves-effect white-text" href="index.html">Home</a></li>
+				<li><a class="waves-effect white-text" href="#">Add Data (CSV / JSON file)</a></li>
+				<li><a class="waves-effect white-text" href="organizer.html">Add Data (Manually)</a></li>
+				<li><a class="waves-effect white-text" href="visualization.html">Visualization</a></li>
+				<li><a class="waves-effect white-text" href="#">Settings</a></li>
+				<li><a class="waves-effect white-text" href="login.html">Exit</a></li>
+			</ul>
+			<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons black-text medium">menu</i></a>
+		</div>
+
+		<!-- Organizer Table -->
+		<div class="container" id="organizer-container">
+			<h1 class="center strong">Organize Paintings</h1>
+			<form id="painting-form" class="row">
+				<!-- Title -->
+				<div class="form-group col s12">
+					<label for="title">Title</label>
+					<input type="text" id="title" class="form-control" />
+				</div>
+				<!-- Artist -->
+				<div class="form-group col s6">
+					<label for="artist">Artist</label>
+					<input type="text" id="artist" class="form-control" />
+				</div>
+				<!-- Year -->
+				<div class="form-group col s6">
+					<label for="year">Year</label>
+					<input type="number" id="year" class="form-control" />
+				</div>
+				<!-- Category / Movement -->
+				<div class="form-group col s6">
+					<label for="category">Category / Artistic Movement</label>
+					<input type="text" id="category" class="form-control" />
+				</div>
+				<!-- ID -->
+				<div class="form-group col s6">
+					<label for="id">Add an Unique Identifier | ID#</label>
+					<input type="text" id="id" class="form-control" />
+				</div>
+				<!-- Floor -->
+				<div class="form-group col s12">
+					<div class="input-field col s6">
+						<select>
+							<option value="" disabled selected>Floor</option>
+							<option value="1">1st Floor</option>
+							<option value="2">2nd Floor</option>
+						</select>
+						<label>Select Floor</label>
+					</div>
+				</div>
+				<!-- IMG FILE -->
+				<div class="center col s12 row btn-img-audio">
+					<input type="file" id="real-file-img" hidden="hidden" />
+					<input type="button" value="Add Image" class="btn btn-small valign-wrapper grey darken-3 col s4" id="btn-organizer-add-img" />
+					<span id="custom-text" class="s6">No file chosen, yet.</span>
+				</div>
+				<!-- Audio FILE -->
+				<div class="center col s12 row btn-img-audio">
+					<input type="file" id="real-file-audio" hidden="hidden" />
+					<input type="button" value="Add Audio" class="btn btn-small grey light-3 col s4" id="btn-organizer-add-audio" />
+					<span id="custom-text-audio" class="s6">No file chosen, yet.</span>
+				</div>
+				<!-- Add Painting -->
+				<input type="submit" value="Add Painting" class="btn btn-small teal darken-1" id="btn-organizer-add" />
+			</form>
+			<table class="table table-striped centered">
+				<thead>
+					<tr>
+						<th>Title</th>
+						<th>Artist</th>
+						<th>Year</th>
+						<th>Floor</th>
+						<th>Category</th>
+						<th>Image</th>
+						<th>Audio</th>
+						<th>ID#</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody id="painting-list"></tbody>
+			</table>
+		</div>
+
+		<!-- Footer -->
+		<footer class="section black white-text center">
+			<p>by Nestor Pérez &copy; 2021</p>
+		</footer>
+
+		<!--Import jQuery before materialize.js-->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
